@@ -226,7 +226,7 @@ AlagaVision_CitizenTech/
 
 1. Subir estes arquivos ao GitHub (repositório criado por sua equipe; não foi publicado automaticamente).
 2. Informar o link do repositório na Plataforma/Teams indicada pelo professor.
-3. Gerar a versão final personalizada do PDF com seus dados: `python scripts/gerar_relatorio.py --integrantes "Nome Sobrenome (RM 00000); Colega (RM 11111)"` e conferir o arquivo em `relatorio/`.
+3. Gerar a versão final personalizada do PDF com seus dados: `python scripts/gerar_relatorio.py --integrantes "Felipe Mion de Andrade (RM 553715)` e conferir o arquivo em `relatorio/`.
 4. Na aula, demonstrar `python main.py --video data/demonstracao_simulada.mp4` e mostrar `resultados/metricas.json`, gráficos e `resultados/predicoes.csv`.
 5. Revisar os fundamentos para a arguição individual: ROI, HSV, limiar, morfologia, conversão pixel/cm, MAE, RMSE, matriz de confusão e limitações.
 
