@@ -1,0 +1,24 @@
+ALAGAVISION | ATUALIZACAO CAFE PARA WINDOWS
+Felipe Mion de Andrade - RM 553715
+
+1) Voce ja criou o ambiente .venv na pasta:
+   C:\Users\felipe.mion\Downloads\AlagaVision_Fotos_e_Videos_Windows\AlagaVision_CitizenTech
+
+2) Para NAO reinstalar as bibliotecas, abra este ZIP de ATUALIZACAO e
+   extraia seu conteudo dentro da pasta-pai:
+   C:\Users\felipe.mion\Downloads\AlagaVision_Fotos_e_Videos_Windows
+   Se o Windows pedir para substituir arquivos, confirme.
+   A pasta AlagaVision_CitizenTech sera atualizada; .venv permanece.
+
+3) Abra AlagaVision_CitizenTech e de dois cliques em:
+   TESTAR_CAFE_WINDOWS.bat
+   Ou execute os comandos do README.md no PowerShell.
+
+4) Para abrir comparativo visual de resultados:
+   resultados\comparativo_cafe_3_fotos.png
+
+5) Relatorio ja contem seu nome e RM:
+   relatorio\AlagaVision_Relatorio_GS.pdf
+
+NOTA: O perfil cafe detecta regioes escuras na ROI, sem reconhecer quimicamente cafe.
+As estimativas das fotos sao exploratorias. Os limites de alerta sao didaticos.

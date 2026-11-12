@@ -1,0 +1,52 @@
+{
+  "contexto": "APENAS dados sintéticos, sem validação em campo",
+  "amostras": 92,
+  "mae_cm": 0.389,
+  "rmse_cm": 0.573,
+  "erro_max_cm": 2.29,
+  "acuracia_classe": 0.9891,
+  "matriz_confusao": [
+    [
+      36,
+      0,
+      0
+    ],
+    [
+      1,
+      27,
+      0
+    ],
+    [
+      0,
+      0,
+      28
+    ]
+  ],
+  "rotulos": [
+    "NORMAL",
+    "ATENCAO",
+    "CRITICO"
+  ],
+  "por_condicao": {
+    "padrao": {
+      "n": 23,
+      "mae_cm": 0.391,
+      "erro_max_cm": 2.29
+    },
+    "pouca_luz": {
+      "n": 23,
+      "mae_cm": 0.391,
+      "erro_max_cm": 2.29
+    },
+    "chuva": {
+      "n": 23,
+      "mae_cm": 0.391,
+      "erro_max_cm": 2.29
+    },
+    "reflexos": {
+      "n": 23,
+      "mae_cm": 0.382,
+      "erro_max_cm": 2.29
+    }
+  }
+}

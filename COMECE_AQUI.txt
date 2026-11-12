@@ -1,0 +1,67 @@
+ALAGAVISION - FELIPE MION DE ANDRADE - RM 553715
+====================================================
+
+ESTE PROJETO NÃO PRECISA DE WEBCAM E ANALISA VIDEO OU FOTO.
+VERSÃO: PERFIS AZUL (PADRAO) E CAFE ESCURO (--liquido cafe).
+O vídeo demonstrativo já está em data/demonstracao_simulada.mp4.
+
+PASSOS NO MACBOOK
+1. Abra o Terminal na pasta AlagaVision_CitizenTech.
+2. Digite, uma linha de cada vez:
+   python3 -m venv .venv
+   source .venv/bin/activate
+   python -m pip install -r requirements.txt
+   python main.py --video data/demonstracao_simulada.mp4
+3. A aplicação mostrará o nível de água e as cores dos alertas.
+   Aperte a tecla Q para sair.
+
+PASSOS NO WINDOWS (POWERSHELL)
+1. Abra o PowerShell na pasta AlagaVision_CitizenTech.
+2. Digite:
+   py -m venv .venv
+   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+   .\.venv\Scripts\python.exe main.py --video data/demonstracao_simulada.mp4
+3. Para analisar a FOTO simulada inclusa:
+   .\.venv\Scripts\python.exe main.py --imagem data/amostras/chuva_16_070cm.jpg --no-display --output resultados/exemplo_foto.jpg
+4. Para foto do iPhone (salvar JPG em data/copo.jpg):
+   .\.venv\Scripts\python.exe main.py --imagem data/copo.jpg --calibrar --max-cm 12
+   Arraste uma área vertical ao lado da régua, mas dentro do copo.
+   O programa salva a foto anotada em resultados/foto_analisada.jpg.
+   Altere 12 para a altura física em cm da região selecionada.
+   A régua NÃO é lida automaticamente pelo programa.
+
+RELATORIO JA IDENTIFICADO
+- Felipe Mion de Andrade (RM 553715) ja consta no PDF.
+- Para regenerar no Windows execute:
+  .\.venv\Scripts\python.exe scripts/gerar_relatorio.py
+- O PDF atualizado ficará em relatorio/AlagaVision_Relatorio_GS.pdf.
+
+SE QUISER USAR SEU IPHONE 13
+- Ajustes > Câmera > Formatos > Mais Compatível.
+- Grave água COLORIDA de azul em recipiente transparente com uma régua física.
+- Mantenha o aparelho fixo; transfira o vídeo (MOV/H.264) para data/.
+- Rode (substituindo o nome do arquivo):
+  python main.py --video data/video_iphone.mov --calibrar --max-cm 20
+- Arraste um retângulo na região azul, da altura 20 cm até o zero, e confirme.
+- Isso é apenas uma opção. A demonstração pronta funciona sem o celular.
+
+ATENÇÃO: VALIDAÇÃO SINTÉTICA
+- 92 imagens simuladas, 58 testes aprovados, MAE 0,389 cm, acurácia 98,91%.
+- 3 fotografias reais com café testadas qualitativamente, sem gabarito físico independente.
+- Os limiares são didáticos, não alertas da Defesa Civil.
+
+TESTE DE CAFE NO WINDOWS
+- Apos instalar as bibliotecas, de dois cliques em TESTAR_CAFE_WINDOWS.bat.
+- Veja resultados/cafe_01_analisada.jpg, cafe_02_analisada.jpg e cafe_03_analisada.jpg.
+- Use --liquido cafe em suas fotos; o sistema detecta liquido escuro, nao a cor azul.
+- Os 3 estados sao demonstrativos e nao representam risco hidrologico.
+- O .gitignore protege as fotos de teste privadas contra upload automatico no GitHub.
+
+PARA ENVIAR AO PROFESSOR
+- Confira o README.md (orientações completas), o relatório PDF e seu nome/RM.
+- Crie o repositório no GitHub e envie o endereço na plataforma solicitada.
+- Apresente o aplicativo e saiba explicar ROI, HSV, morfologia, MAE, RMSE e limitações.
+- Não existe repositório publicado automaticamente.
+
+GUIA COMPLETO: README.md
+ROTEIRO DE APRESENTAÇÃO: GUIA_APRESENTACAO.md
