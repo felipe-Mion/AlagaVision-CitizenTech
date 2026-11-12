@@ -10,7 +10,7 @@
 | --- | --- |
 | **Felipe Mion de Andrade** | **553715** |
 
-> Integrante informado: Felipe Mion de Andrade (RM 553715). Adicione outros apenas se fizerem parte da equipe.
+> Integrante informado: Felipe Mion de Andrade (RM 553715).
 
 ## 1. O problema e o cidadão beneficiado
 
